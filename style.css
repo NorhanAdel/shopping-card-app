@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+header{
+ height: 70px;
+ padding: 10px 0;   
+ background-color: darkgray;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    font-size: 30px;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    display: block;
+    color: #fff;
+    min-width: 80px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+/* ******************form************/
+.section-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    text-align: center;
+    background-color: rgb(201, 4, 43);
+    padding: 20px;
+}
+.section-form h2{
+    font-size: 30px;
+    color: #fff;
+}
+.section-form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    outline: none;
+}
+.section-form input[type='submit']:hover{
+opacity: .5;
+}
+nav .user_info{
+    display: none;
+}
+
+
+.products{
+    width: 70%;
+    margin: 10px 0;
+
+}
+.product_item{
+    width:100%;
+   border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.product_item img{
+    width: 25%;
+    margin-right: 20px;
+}
+.product_action{
+    
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.add_to_cart{
+    display: block;
+    color: #fff;
+    background: green;
+    border: 0;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100px;
+    cursor: pointer;
+}
+.fav{
+    display: block;
+    width: 20px ;
+    margin-left: auto;
+}
+nav ul .shopping_cart i{
+color: #fff;
+font-size: 25px;
+cursor: pointer;
+}
+  .user_info li{
+    margin: 0 10px;
+    position: relative;
+  }
+  .user_info .badge{
+position: absolute;
+width: 20px;
+height: 20px;
+background-color: rgb(156, 22, 78);
+color: #fff;
+text-align: center;
+display: block;
+border-radius: 50%;
+top: -10px;
+right: -10px;
+display: none;
+  }
+  .cart_products{
+    position: absolute;
+    width: 210px;
+    transform: translate(-40px,0);
+    background-color: #ddd;
+    top: 56px;
+    padding: 10px ;
+    border: 1px solid gray;
+    display:none;
+  }
+  .cart_products a{
+    
+    display: block;
+  color:#fff;
+  margin: 4px 0;
+  background-color: crimson;
+  text-align: center;
+  }
